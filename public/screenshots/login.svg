@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#00000018"/>
+    </filter>
+    <filter id="btn-shadow" x="-5%" y="-10%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#6366f140"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="#f9fafb"/>
+
+  <!-- Subtle background pattern dots -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1.2" fill="#e5e7eb"/>
+  </pattern>
+  <rect width="1200" height="750" fill="url(#dots)"/>
+
+  <!-- Card -->
+  <rect x="390" y="175" width="420" height="400" rx="16" ry="16" fill="white" filter="url(#card-shadow)"/>
+
+  <!-- Card top accent bar -->
+  <rect x="390" y="175" width="420" height="4" rx="2" fill="#6366f1"/>
+  <rect x="390" y="177" width="420" height="2" fill="#6366f1"/>
+
+  <!-- Logo area -->
+  <circle cx="600" cy="235" r="28" fill="#eef2ff"/>
+  <!-- Abstract logo icon -->
+  <rect x="588" y="223" width="8" height="24" rx="2" fill="#6366f1"/>
+  <rect x="600" y="223" width="8" height="24" rx="2" fill="#818cf8"/>
+  <rect x="588" y="219" width="20" height="6" rx="2" fill="#6366f1"/>
+
+  <!-- Title -->
+  <text x="600" y="292" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#111827" text-anchor="middle">RAG Explorer</text>
+  <!-- Subtitle -->
+  <text x="600" y="316" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#6b7280" text-anchor="middle">Sign in to your account</text>
+
+  <!-- Divider -->
+  <line x1="420" y1="334" x2="780" y2="334" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Username label -->
+  <text x="420" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#374151">Username</text>
+  <!-- Username input -->
+  <rect x="420" y="368" width="360" height="42" rx="8" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+  <!-- Input inner highlight on focus simulation -->
+  <rect x="420" y="368" width="360" height="42" rx="8" fill="none" stroke="#6366f1" stroke-width="1.5" opacity="0.3"/>
+  <!-- User icon inside input -->
+  <circle cx="444" cy="389" r="7" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <path d="M438 401 q6-5 12 0" fill="none" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Input text -->
+  <text x="460" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#111827">admin</text>
+
+  <!-- Password label -->
+  <text x="420" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#374151">Password</text>
+  <!-- Password input -->
+  <rect x="420" y="440" width="360" height="42" rx="8" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+  <!-- Lock icon -->
+  <rect x="436" y="454" width="14" height="11" rx="2" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <path d="M439 454 v-3 a4 4 0 0 1 8 0 v3" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="443" cy="460" r="1.5" fill="#9ca3af"/>
+  <!-- Password dots -->
+  <circle cx="462" cy="461" r="3" fill="#374151"/>
+  <circle cx="474" cy="461" r="3" fill="#374151"/>
+  <circle cx="486" cy="461" r="3" fill="#374151"/>
+  <circle cx="498" cy="461" r="3" fill="#374151"/>
+  <circle cx="510" cy="461" r="3" fill="#374151"/>
+  <circle cx="522" cy="461" r="3" fill="#374151"/>
+  <circle cx="534" cy="461" r="3" fill="#374151"/>
+  <circle cx="546" cy="461" r="3" fill="#374151"/>
+
+  <!-- Forgot password link -->
+  <text x="780" y="432" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6366f1" text-anchor="end">Forgot password?</text>
+
+  <!-- Sign In Button -->
+  <rect x="420" y="506" width="360" height="44" rx="8" fill="#6366f1" filter="url(#btn-shadow)"/>
+  <!-- Button gradient overlay -->
+  <defs>
+    <linearGradient id="btn-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect x="420" y="506" width="360" height="44" rx="8" fill="url(#btn-grad)"/>
+  <text x="600" y="533" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="white" text-anchor="middle">Sign In</text>
+
+  <!-- Footer note -->
+  <text x="600" y="588" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9ca3af" text-anchor="middle">Protected by enterprise-grade security</text>
+
+  <!-- Small lock icon next to footer -->
+  <rect x="566" y="594" width="10" height="8" rx="1.5" fill="none" stroke="#d1d5db" stroke-width="1"/>
+  <path d="M568 594 v-2 a3 3 0 0 1 6 0 v2" fill="none" stroke="#d1d5db" stroke-width="1"/>
+
+  <!-- Version tag bottom right -->
+  <text x="1180" y="740" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#d1d5db" text-anchor="end">v1.0.0</text>
+</svg>

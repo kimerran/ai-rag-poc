@@ -2,6 +2,16 @@
 
 A full-stack Retrieval-Augmented Generation (RAG) demo application. Upload documents, index them into a vector database, and query them using natural language powered by Claude.
 
+## Screenshots
+
+![Login](public/screenshots/login.svg)
+
+![Dashboard](public/screenshots/dashboard.svg)
+
+![Documents](public/screenshots/documents.svg)
+
+![Chat](public/screenshots/chat.svg)
+
 ## Features
 
 - **Document ingestion** — Upload PDF, TXT, or Markdown files (up to 10 MB)

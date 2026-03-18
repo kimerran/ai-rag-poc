@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <filter id="card-shadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#0000000d"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#00000008"/>
+    </filter>
+    <filter id="sidebar-shadow">
+      <feDropShadow dx="2" dy="0" stdDeviation="6" flood-color="#00000010"/>
+    </filter>
+  </defs>
+
+  <!-- App background -->
+  <rect width="1200" height="750" fill="#f9fafb"/>
+
+  <!-- ── SIDEBAR ── -->
+  <rect x="0" y="0" width="220" height="750" fill="white" filter="url(#sidebar-shadow)"/>
+  <rect x="220" y="0" width="1" height="750" fill="#e5e7eb"/>
+
+  <!-- Sidebar logo area -->
+  <rect x="0" y="0" width="220" height="64" fill="white"/>
+  <circle cx="36" cy="32" r="14" fill="#eef2ff"/>
+  <rect x="30" y="24" width="5" height="16" rx="1.5" fill="#6366f1"/>
+  <rect x="38" y="24" width="5" height="16" rx="1.5" fill="#818cf8"/>
+  <rect x="30" y="21" width="13" height="5" rx="1.5" fill="#6366f1"/>
+  <text x="58" y="37" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" fill="#111827">RAG Explorer</text>
+
+  <!-- Sidebar divider -->
+  <line x1="16" y1="64" x2="204" y2="64" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Nav label -->
+  <text x="20" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#9ca3af" letter-spacing="0.08em">NAVIGATION</text>
+
+  <!-- Nav: Dashboard (ACTIVE) -->
+  <rect x="8" y="100" width="204" height="38" rx="8" fill="#eef2ff"/>
+  <!-- Dashboard icon -->
+  <rect x="22" y="112" width="7" height="7" rx="1" fill="#6366f1"/>
+  <rect x="31" y="112" width="7" height="7" rx="1" fill="#6366f1"/>
+  <rect x="22" y="121" width="7" height="4" rx="1" fill="#818cf8"/>
+  <rect x="31" y="121" width="7" height="4" rx="1" fill="#818cf8"/>
+  <text x="52" y="124" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#6366f1">Dashboard</text>
+
+  <!-- Nav: Documents -->
+  <rect x="22" y="153" width="9" height="11" rx="1" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <line x1="24" y1="158" x2="29" y2="158" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="24" y1="161" x2="29" y2="161" stroke="#9ca3af" stroke-width="1"/>
+  <text x="52" y="163" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#6b7280">Documents</text>
+
+  <!-- Nav: Chat -->
+  <rect x="22" y="192" width="11" height="10" rx="2" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <path d="M24 202 l2 3 l2-3" fill="#9ca3af" stroke="none"/>
+  <text x="52" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#6b7280">Chat</text>
+
+  <!-- Nav: Settings -->
+  <circle cx="27" cy="240" r="5" fill="none" stroke="#9ca3af" stroke-width="1.5"/>
+  <circle cx="27" cy="240" r="2" fill="#9ca3af"/>
+  <text x="52" y="244" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#6b7280">Settings</text>
+
+  <!-- Sidebar bottom user -->
+  <line x1="16" y1="700" x2="204" y2="700" stroke="#f3f4f6" stroke-width="1"/>
+  <circle cx="36" cy="724" r="14" fill="#eef2ff"/>
+  <text x="36" y="729" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#6366f1" text-anchor="middle">A</text>
+  <text x="58" y="720" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#111827">admin</text>
+  <text x="58" y="734" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">Administrator</text>
+
+  <!-- ── MAIN CONTENT ── -->
+
+  <!-- Top header bar -->
+  <rect x="220" y="0" width="980" height="64" fill="white"/>
+  <line x1="220" y1="64" x2="1200" y2="64" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="248" y="37" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#111827">Dashboard</text>
+  <text x="248" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#9ca3af">Welcome back, admin</text>
+  <!-- Header right: date -->
+  <text x="1172" y="37" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280" text-anchor="end">March 18, 2026</text>
+
+  <!-- ── STAT CARDS ROW ── -->
+
+  <!-- Card 1: Total Documents -->
+  <rect x="248" y="88" width="210" height="100" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1" filter="url(#card-shadow)"/>
+  <text x="268" y="114" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6b7280">Total Documents</text>
+  <text x="268" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#111827">12</text>
+  <!-- small trend icon -->
+  <text x="268" y="170" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">+2 this week</text>
+  <!-- icon right -->
+  <rect x="428" y="100" width="18" height="22" rx="2" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="432" y1="108" x2="442" y2="108" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="432" y1="113" x2="442" y2="113" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="432" y1="118" x2="439" y2="118" stroke="#9ca3af" stroke-width="1"/>
+
+  <!-- Card 2: Ready Documents -->
+  <rect x="476" y="88" width="210" height="100" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1" filter="url(#card-shadow)"/>
+  <text x="496" y="114" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6b7280">Ready Documents</text>
+  <text x="496" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#16a34a">9</text>
+  <text x="496" y="170" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">75% of total</text>
+  <circle cx="665" cy="112" r="10" fill="#dcfce7"/>
+  <path d="M660 112 l3 3 l5-5" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Card 3: Processing -->
+  <rect x="704" y="88" width="210" height="100" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1" filter="url(#card-shadow)"/>
+  <text x="724" y="114" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#6b7280">Processing</text>
+  <text x="724" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#ca8a04">1</text>
+  <text x="724" y="170" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">q4-forecast.pdf</text>
+  <circle cx="893" cy="112" r="10" fill="#fef9c3"/>
+  <!-- spinner arcs -->
+  <path d="M893 103 a9 9 0 0 1 7 14" fill="none" stroke="#ca8a04" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M893 121 a9 9 0 0 1 -7 -14" fill="none" stroke="#fde68a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Card 4: Chunks Indexed -->
+  <rect x="932" y="88" width="240" height="100" rx="12" fill="#6366f1" filter="url(#card-shadow)"/>
+  <text x="952" y="114" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#c7d2fe">Chunks Indexed</text>
+  <text x="952" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="white">847</text>
+  <text x="952" y="170" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#a5b4fc">Across all documents</text>
+  <!-- icon -->
+  <rect x="1148" y="100" width="8" height="22" rx="2" fill="#818cf8"/>
+  <rect x="1140" y="108" width="8" height="14" rx="2" fill="#a5b4fc"/>
+  <rect x="1156" y="112" width="8" height="10" rx="2" fill="#818cf8"/>
+
+  <!-- ── BOTTOM TWO COLUMNS ── -->
+
+  <!-- Left card: Recent Documents -->
+  <rect x="248" y="210" width="455" height="510" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1" filter="url(#card-shadow)"/>
+
+  <!-- Card header -->
+  <text x="272" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#111827">Recent Documents</text>
+  <text x="680" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6366f1" text-anchor="end">View all</text>
+  <line x1="248" y1="252" x2="703" y2="252" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Table header -->
+  <text x="272" y="276" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.05em">NAME</text>
+  <text x="530" y="276" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.05em">STATUS</text>
+  <text x="650" y="276" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#9ca3af" letter-spacing="0.05em">DATE</text>
+  <line x1="248" y1="284" x2="703" y2="284" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <rect x="248" y="284" width="455" height="52" fill="white"/>
+  <!-- file icon -->
+  <rect x="268" y="296" width="14" height="18" rx="2" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="272" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="6" font-weight="700" fill="#ef4444">PDF</text>
+  <text x="292" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#111827">annual-report.pdf</text>
+  <text x="292" y="322" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">2.4 MB · 312 chunks</text>
+  <rect x="520" y="299" width="48" height="18" rx="9" fill="#dcfce7"/>
+  <text x="544" y="312" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#16a34a" text-anchor="middle">READY</text>
+  <text x="648" y="309" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280">Mar 12</text>
+  <line x1="248" y1="336" x2="703" y2="336" stroke="#f9fafb" stroke-width="1"/>
+
+  <!-- Row 2 -->
+  <rect x="248" y="336" width="455" height="52" fill="white"/>
+  <rect x="268" y="348" width="14" height="18" rx="2" fill="#e0e7ff" stroke="#a5b4fc" stroke-width="1"/>
+  <text x="271" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="6" font-weight="700" fill="#6366f1">MD</text>
+  <text x="292" y="357" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#111827">product-spec.md</text>
+  <text x="292" y="374" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">45 KB · 38 chunks</text>
+  <rect x="520" y="351" width="48" height="18" rx="9" fill="#dcfce7"/>
+  <text x="544" y="364" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#16a34a" text-anchor="middle">READY</text>
+  <text x="648" y="361" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280">Mar 14</text>
+  <line x1="248" y1="388" x2="703" y2="388" stroke="#f9fafb" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <rect x="248" y="388" width="455" height="52" fill="white"/>
+  <rect x="268" y="400" width="14" height="18" rx="2" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+  <text x="272" y="412" font-family="system-ui, -apple-system, sans-serif" font-size="6" font-weight="700" fill="#ef4444">PDF</text>
+  <text x="292" y="409" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#111827">research-paper.pdf</text>
+  <text x="292" y="426" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">1.8 MB · 201 chunks</text>
+  <rect x="516" y="403" width="64" height="18" rx="9" fill="#fef9c3"/>
+  <text x="548" y="416" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#ca8a04" text-anchor="middle">PROCESSING</text>
+  <text x="648" y="413" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280">Mar 15</text>
+  <line x1="248" y1="440" x2="703" y2="440" stroke="#f9fafb" stroke-width="1"/>
+
+  <!-- Row 4 -->
+  <rect x="248" y="440" width="455" height="52" fill="white"/>
+  <rect x="268" y="452" width="14" height="18" rx="2" fill="#f0fdf4" stroke="#86efac" stroke-width="1"/>
+  <text x="271" y="464" font-family="system-ui, -apple-system, sans-serif" font-size="6" font-weight="700" fill="#16a34a">TXT</text>
+  <text x="292" y="461" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#111827">meeting-notes.txt</text>
+  <text x="292" y="478" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">12 KB · 18 chunks</text>
+  <rect x="520" y="455" width="48" height="18" rx="9" fill="#dcfce7"/>
+  <text x="544" y="468" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#16a34a" text-anchor="middle">READY</text>
+  <text x="648" y="465" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6b7280">Mar 16</text>
+
+  <!-- Right card: Recent Conversations -->
+  <rect x="720" y="210" width="452" height="510" rx="12" fill="white" stroke="#e5e7eb" stroke-width="1" filter="url(#card-shadow)"/>
+
+  <text x="744" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="600" fill="#111827">Recent Conversations</text>
+  <text x="1152" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6366f1" text-anchor="end">View all</text>
+  <line x1="720" y1="252" x2="1172" y2="252" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Conversation rows -->
+
+  <!-- Conv 1 -->
+  <rect x="720" y="272" width="452" height="60" fill="white"/>
+  <circle cx="752" cy="302" r="16" fill="#eef2ff"/>
+  <text x="752" y="307" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#6366f1" text-anchor="middle">Q3</text>
+  <text x="778" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#111827">Q3 Financial Analysis</text>
+  <text x="778" y="313" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">What were the main revenue drivers...</text>
+  <text x="1152" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af" text-anchor="end">Mar 18, 2026</text>
+  <rect x="1140" y="305" width="8" height="8" rx="4" fill="#6366f1"/>
+  <line x1="720" y1="332" x2="1172" y2="332" stroke="#f9fafb" stroke-width="1"/>
+
+  <!-- Conv 2 -->
+  <rect x="720" y="332" width="452" height="60" fill="white"/>
+  <circle cx="752" cy="362" r="16" fill="#f3f4f6"/>
+  <text x="752" y="367" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#6b7280" text-anchor="middle">PR</text>
+  <text x="778" y="355" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#111827">Product Requirements</text>
+  <text x="778" y="373" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">What are the key features planned...</text>
+  <text x="1152" y="355" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af" text-anchor="end">Mar 16, 2026</text>
+  <line x1="720" y1="392" x2="1172" y2="392" stroke="#f9fafb" stroke-width="1"/>
+
+  <!-- Conv 3 -->
+  <rect x="720" y="392" width="452" height="60" fill="white"/>
+  <circle cx="752" cy="422" r="16" fill="#f3f4f6"/>
+  <text x="752" y="427" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#6b7280" text-anchor="middle">RS</text>
+  <text x="778" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#111827">Research Summary</text>
+  <text x="778" y="433" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af">Summarize the key findings from...</text>
+  <text x="1152" y="415" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9ca3af" text-anchor="end">Mar 14, 2026</text>
+
+  <!-- Empty state hint for remaining rows -->
+  <line x1="720" y1="452" x2="1172" y2="452" stroke="#f9fafb" stroke-width="1"/>
+
+  <!-- Quick actions section -->
+  <text x="744" y="490" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#374151">Quick Actions</text>
+  <line x1="720" y1="498" x2="1172" y2="498" stroke="#f3f4f6" stroke-width="1"/>
+
+  <!-- Action buttons -->
+  <rect x="744" y="510" width="168" height="36" rx="8" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="828" y="532" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#6366f1" text-anchor="middle">Upload Document</text>
+
+  <rect x="924" y="510" width="168" height="36" rx="8" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="1008" y="532" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="#6366f1" text-anchor="middle">New Conversation</text>
+
+</svg>
