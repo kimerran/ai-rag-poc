@@ -1,0 +1,47 @@
+{
+  "name": "rag-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "prisma generate"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "@prisma/client": "^5.14.0",
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@aws-sdk/client-s3": "^3.600.0",
+    "@aws-sdk/s3-request-presigner": "^3.600.0",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.4.0",
+    "zod": "^3.23.8",
+    "chromadb": "^1.8.1",
+    "langchain": "^0.2.0",
+    "@langchain/community": "^0.2.0",
+    "@langchain/textsplitters": "^0.0.3",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/react": "^18.3.0",
+    "@types/node": "^20.14.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/pdf-parse": "^1.1.4",
+    "prisma": "^5.14.0",
+    "tsx": "^4.15.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0"
+  }
+}
